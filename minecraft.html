@@ -1,0 +1,396 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gaming Universe | Minecraft</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #090914;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    background: #101020;
+    border-bottom: 1px solid #29244c;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #a970ff;
+    text-shadow: 0 0 15px #8b5cf6;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 18px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #a970ff;
+}
+
+.hero {
+    min-height: 430px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+    background:
+    linear-gradient(rgba(9,9,20,.55),rgba(9,9,20,.9)),
+    url("https://images.unsplash.com/photo-1607513746994-51f730a44832?w=1600")
+    center/cover;
+}
+
+.hero h1 {
+    font-size: clamp(45px, 8vw, 80px);
+    text-shadow: 0 0 25px #22c55e;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    color: #dddded;
+    font-size: 19px;
+    max-width: 650px;
+    line-height: 1.7;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 28px;
+    padding: 15px 28px;
+    background: linear-gradient(90deg,#9333ea,#2563eb);
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 25px #9333ea;
+}
+
+section {
+    padding: 65px 8%;
+}
+
+.title {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    color: #a6a6bd;
+    line-height: 1.7;
+    margin-bottom: 35px;
+}
+
+.intro {
+    background: #101020;
+}
+
+.intro-box {
+    background: #19192e;
+    border: 1px solid #302953;
+    border-radius: 15px;
+    padding: 30px;
+    line-height: 1.8;
+    color: #c7c7d9;
+}
+
+.intro-box h3 {
+    color: #b68aff;
+    margin-bottom: 15px;
+    font-size: 23px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    gap: 22px;
+}
+
+.card {
+    background: #151529;
+    border: 1px solid #302953;
+    border-radius: 13px;
+    padding: 28px;
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    border-color: #a855f7;
+    box-shadow: 0 0 22px #5125a044;
+}
+
+.icon {
+    font-size: 38px;
+    margin-bottom: 17px;
+}
+
+.card h3 {
+    color: #b68aff;
+    margin-bottom: 12px;
+    font-size: 21px;
+}
+
+.card p {
+    color: #b7b7cb;
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+.creative {
+    background: #101020;
+}
+
+.creative-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 30px;
+    align-items: center;
+}
+
+.creative-box img {
+    width: 100%;
+    border-radius: 14px;
+    border: 1px solid #49316e;
+}
+
+.creative-text h3 {
+    color: #b68aff;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.creative-text p {
+    color: #b7b7cb;
+    line-height: 1.8;
+}
+
+.fact {
+    background: #19192e;
+    border: 1px solid #302953;
+    border-radius: 12px;
+    padding: 25px;
+    text-align: center;
+}
+
+.fact h3 {
+    color: #a970ff;
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+.fact p {
+    color: #b7b7cb;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+footer {
+    background: #080810;
+    border-top: 1px solid #29244c;
+    text-align: center;
+    padding: 30px;
+    color: #88889e;
+    font-size: 13px;
+}
+
+footer span {
+    color: #a970ff;
+}
+
+@media(max-width:650px) {
+    header {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    nav a {
+        margin: 0 5px;
+        font-size: 11px;
+    }
+
+    section {
+        padding: 45px 6%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">✦ GAMING UNIVERSE</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="games.html">Games</a>
+        <a href="fortnite.html">Fortnite</a>
+        <a href="minecraft.html">Minecraft</a>
+        <a href="brawlstars.html">Brawl Stars</a>
+        <a href="news.html">News</a>
+    </nav>
+</header>
+
+<div class="hero">
+    <h1>MINECRAFT</h1>
+    <p>
+        Eine grenzenlose Welt aus Blöcken.
+        Baue, erforsche und überlebe deine eigenen Abenteuer!
+    </p>
+    <a href="#spielmodi" class="button">Minecraft entdecken ↓</a>
+</div>
+
+<section class="intro">
+    <h2 class="title">⛏️ Was ist Minecraft?</h2>
+    <p class="subtitle">Entdecke eines der erfolgreichsten Videospiele der Welt.</p>
+
+    <div class="intro-box">
+        <h3>Die Welt von Minecraft</h3>
+        Minecraft ist ein Sandbox-Spiel, das ursprünglich 2009
+        veröffentlicht wurde. Die vollständige erste Version
+        erschien 2011.
+
+        Das Besondere: Die Spielwelt besteht aus Blöcken.
+        Spieler können Rohstoffe sammeln, Gebäude bauen,
+        Abenteuer erleben und ihre Umgebung frei gestalten.
+
+        Es gibt kaum Grenzen für die eigene Kreativität.
+        Jeder Spieler kann seine Welt ganz individuell entwickeln.
+    </div>
+</section>
+
+<section id="spielmodi">
+    <h2 class="title">🌍 Die Spielmodi</h2>
+    <p class="subtitle">In Minecraft gibt es verschiedene Arten zu spielen.</p>
+
+    <div class="cards">
+
+        <div class="card">
+            <div class="icon">❤️</div>
+            <h3>Überlebensmodus</h3>
+            <p>
+                Sammle Rohstoffe, stelle Werkzeuge her,
+                baue ein Zuhause und schütze dich vor Gefahren.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🏗️</div>
+            <h3>Kreativmodus</h3>
+            <p>
+                Nutze unbegrenzte Ressourcen und baue
+                riesige Gebäude, Städte und fantastische Welten.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">⚔️</div>
+            <h3>Abenteuermodus</h3>
+            <p>
+                Erkunde speziell gestaltete Welten
+                und erlebe Abenteuer mit besonderen Regeln.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">👀</div>
+            <h3>Zuschauermodus</h3>
+            <p>
+                Beobachte die Spielwelt frei und entdecke
+                die Umgebung aus einer anderen Perspektive.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section class="creative">
+    <h2 class="title">🏰 Bauen ohne Grenzen</h2>
+    <p class="subtitle">Deiner Fantasie sind kaum Grenzen gesetzt.</p>
+
+    <div class="creative-box">
+        <img src="https://images.unsplash.com/photo-1607513746994-51f730a44832?w=900"
+        alt="Blockartige Minecraft-Spielwelt">
+
+        <div class="creative-text">
+            <h3>Deine eigene Welt</h3>
+            <p>
+                In Minecraft kannst du beeindruckende Bauwerke
+                erschaffen. Von kleinen Häusern über riesige
+                Burgen bis hin zu ganzen Städten ist alles möglich.
+
+                Du kannst alleine bauen oder gemeinsam
+                mit Freunden an großen Projekten arbeiten.
+                Auch Redstone ermöglicht spannende technische
+                Konstruktionen und automatische Maschinen.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2 class="title">💡 Interessante Fakten</h2>
+    <p class="subtitle">Das solltest du über Minecraft wissen.</p>
+
+    <div class="cards">
+
+        <div class="fact">
+            <h3>2009</h3>
+            <p>Die erste öffentliche Version von Minecraft erschien.</p>
+        </div>
+
+        <div class="fact">
+            <h3>2011</h3>
+            <p>Die vollständige erste Version wurde veröffentlicht.</p>
+        </div>
+
+        <div class="fact">
+            <h3>Mojang</h3>
+            <p>Das Studio, das Minecraft entwickelt hat.</p>
+        </div>
+
+        <div class="fact">
+            <h3>Redstone</h3>
+            <p>Mit Redstone lassen sich technische Schaltungen bauen.</p>
+        </div>
+
+    </div>
+
+    <div style="text-align:center; margin-top:40px;">
+        <a class="button"
+        href="https://www.minecraft.net/de-de"
+        target="_blank">
+            Offizielle Minecraft-Website →
+        </a>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 <span>GAMING UNIVERSE</span> | Deine Welt des Gamings</p>
+</footer>
+
+</body>
+</html>

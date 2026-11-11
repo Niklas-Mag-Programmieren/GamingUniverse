@@ -1,0 +1,268 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Universe | News</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #090914;
+            color: white;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #111126;
+            padding: 22px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            border-bottom: 2px solid #713cff;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+            color: #a78bfa;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 18px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #a78bfa;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 75px 20px;
+            background: linear-gradient(135deg, #24104f, #10102b, #092e54);
+        }
+
+        .hero h1 {
+            font-size: 46px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            color: #d2c9ef;
+            font-size: 18px;
+        }
+
+        .container {
+            width: 85%;
+            max-width: 1100px;
+            margin: 45px auto;
+        }
+
+        .section-title {
+            font-size: 29px;
+            color: #a78bfa;
+            margin-bottom: 25px;
+        }
+
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 22px;
+        }
+
+        .news-card {
+            background: #17172e;
+            border: 1px solid #34345a;
+            border-radius: 14px;
+            padding: 24px;
+            transition: 0.3s;
+        }
+
+        .news-card:hover {
+            transform: translateY(-5px);
+            border-color: #9b5cff;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #713cff;
+            color: white;
+            padding: 5px 11px;
+            border-radius: 20px;
+            font-size: 12px;
+            margin-bottom: 13px;
+        }
+
+        .news-card h3 {
+            font-size: 21px;
+            margin-bottom: 12px;
+        }
+
+        .news-card p {
+            color: #c4c4d8;
+        }
+
+        .info-box {
+            background: linear-gradient(120deg, #211044, #102442);
+            padding: 30px;
+            border-radius: 15px;
+            border-left: 4px solid #a78bfa;
+            margin-top: 45px;
+        }
+
+        .info-box h2 {
+            margin-bottom: 12px;
+            color: #c4a8ff;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #111126;
+            color: #aaa;
+            margin-top: 60px;
+        }
+
+        @media (max-width: 650px) {
+            header {
+                flex-direction: column;
+            }
+
+            nav {
+                text-align: center;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px;
+            }
+
+            .hero h1 {
+                font-size: 34px;
+            }
+
+            .container {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">🎮 GAMING UNIVERSE</div>
+
+    <nav>
+        <a href="index.html">Startseite</a>
+        <a href="games.html">Games</a>
+        <a href="fortnite.html">Fortnite</a>
+        <a href="minecraft.html">Minecraft</a>
+        <a href="brawlstars.html">Brawl Stars</a>
+        <a href="news.html">News</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Gaming News & Trends</h1>
+    <p>Alles rund um Updates, Gaming-Trends und die Welt der Videospiele.</p>
+</section>
+
+<main class="container">
+
+    <h2 class="section-title">📰 Themen aus der Gaming-Welt</h2>
+
+    <div class="news-grid">
+
+        <article class="news-card">
+            <span class="tag">Fortnite</span>
+            <h3>Neue Inhalte und Events</h3>
+            <p>
+                In Fortnite sorgen neue Spielmodi, Skins und besondere Events
+                regelmäßig für Abwechslung. Die Community wartet gespannt
+                auf neue Herausforderungen.
+            </p>
+        </article>
+
+        <article class="news-card">
+            <span class="tag">Minecraft</span>
+            <h3>Eine Welt voller Möglichkeiten</h3>
+            <p>
+                Minecraft begeistert durch seine Kreativität. Spieler können
+                eigene Gebäude erschaffen, Abenteuer erleben und gemeinsam
+                große Projekte umsetzen.
+            </p>
+        </article>
+
+        <article class="news-card">
+            <span class="tag">Brawl Stars</span>
+            <h3>Neue Strategien entdecken</h3>
+            <p>
+                Neue Kombinationen aus Brawlern und Spielstrategien machen
+                die Matches spannend. Teamwork und gutes Timing sind besonders
+                wichtig.
+            </p>
+        </article>
+
+        <article class="news-card">
+            <span class="tag">Gaming-Trend</span>
+            <h3>Gaming mit Freunden</h3>
+            <p>
+                Multiplayer-Spiele werden immer beliebter. Gemeinsam spielen,
+                chatten und Herausforderungen meistern gehört für viele
+                Gamer zum Alltag.
+            </p>
+        </article>
+
+        <article class="news-card">
+            <span class="tag">E-Sports</span>
+            <h3>Gaming als Wettbewerb</h3>
+            <p>
+                Im E-Sport treten Spieler und Teams in Turnieren gegeneinander
+                an. Dabei zählen Training, Konzentration und eine gute
+                Zusammenarbeit.
+            </p>
+        </article>
+
+        <article class="news-card">
+            <span class="tag">Technik</span>
+            <h3>Die Zukunft des Gamings</h3>
+            <p>
+                Bessere Grafik, schnellere Ladezeiten und neue Technologien
+                verändern die Gaming-Welt. Dadurch entstehen immer neue
+                Spielerlebnisse.
+            </p>
+        </article>
+
+    </div>
+
+    <section class="info-box">
+        <h2>💡 Schon gewusst?</h2>
+        <p>
+            Videospiele sind heute mehr als nur Unterhaltung.
+            Sie verbinden Menschen auf der ganzen Welt, fördern Kreativität
+            und können sogar als professioneller Sport betrieben werden.
+        </p>
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 Gaming Universe | Dein Portal für die Gaming-Welt</p>
+    <p>Schulprojekt – Alle Rechte vorbehalten.</p>
+</footer>
+
+</body>
+</html>
